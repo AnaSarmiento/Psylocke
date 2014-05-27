@@ -1,9 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <h1><center>Quickly improve your life so you can live it faster</center></h1>
-    <p><i>Big Ambitions. Tiny frame</i></p>
-    <p> <i>Where organizing family meals, exercise, life, schedules leads to harmony. </i></p>
-	    <img src="https://camo.githubusercontent.com/3618cc82b345de8d5ba4563baaf0bb7a4284669e/687474703a2f2f7374617469632e636f6d696376696e652e636f6d2f75706c6f6164732f7363616c655f6d656469756d2f31312f3131333838332f333130383238302d323735353538363032382d32303832302e6a7067" />
-	</body>
+<head>
+	<link type="text/css" rel="stylesheet" href="/Users/anacsarmiento/Psylocke/CSS/stylesheet.css"/>
+	
+	<script type="text/javascript">
+	function tab(tab) {
+	document.getElementById('tab1').style.display = 'none';
+	document.getElementById('tab2').style.display = 'none';
+	document.getElementById('li_tab1').setAttribute("class", "");
+	document.getElementById('li_tab2').setAttribute("class", "");
+	document.getElementById(tab).style.display = 'block';
+	document.getElementById('li_'+tab).setAttribute("class", "active");
+}
+	</script>
+</head>
+ <body>
+  	 <img src="http://www.biv.com/apps/pbcsi.dll/bilde?Site=GV&Date=20120313&Category=BIV0102&ArtNo=120319985&Ref=AR" />
+    <h1><center>Enjoy life more by automating your menial tasks</center></h1>
+    <p><center><i><h3>Big Ambitions. Tiny frame</h3></i></center></p>
+    <p> <center><i> The place to organize your weekly meals, outfits, and exercise schedule to bring you harmony. We do the planning, you do the living. </i></center></p>
+		
+		<iframe src="https://www.google.com/calendar/embed?src=anacsarmiento%40gmail.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
+		</iframe>
+
+		<div id=”Tabs”>
+			<ul>
+				<li id="li_tab1" onclick="tab('tab1')"><a>Tab 1</a></li>
+				<li id="li_tab2" onclick="tab('tab2')"><a>Tab 2</a></li>
+				<li id="li_tab3" onclick="tab('tab3')"><a>Tab 3</a></li>
+			</ul>
+
+		<div id="Content_Area">
+			<div id="tab1">
+			<p>Meals</p>
+		</div>
+
+		<div id="tab2" style=”display: none;”> 
+			<p>Outfits</p>
+
+		<div id="tab3" style=”display: none;”> 
+			<p>Exercise Routine</p>
+		</div>
+</body>
 </html>
